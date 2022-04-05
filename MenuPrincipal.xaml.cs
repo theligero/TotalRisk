@@ -26,5 +26,15 @@ namespace TotalRisk
         {
             this.InitializeComponent();
         }
+
+        private void Individual_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PartidaIndividual));
+        }
+
+        private void Cooperativo_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PartidaOnline));
+        }
     }
 }
