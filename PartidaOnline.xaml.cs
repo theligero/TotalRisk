@@ -35,7 +35,8 @@ namespace TotalRisk
 
         private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Escape) App.TryGoBack();
+            if (e.Key == Windows.System.VirtualKey.Escape) 
+                App.TryGoBack();
         }
     }
 }
