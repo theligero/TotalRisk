@@ -11,6 +11,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
@@ -18,17 +19,17 @@
                 Content="Modo Individual"
                 Click="Individual_Click"
                 VerticalAlignment="Center"
-                HorizontalAlignment="Center"
+                HorizontalAlignment="Left"
                 Width="250"
                 Height="400"
-                Grid.Column="0"/>
+                Grid.Column="1" Background="#3308FF00"/>
 
         <Button x:Name="Cooperativo"
                 Content="Modo Cooperativo"
                 Click="Cooperativo_Click"
-                HorizontalAlignment="Center"
+                HorizontalAlignment="Right"
                 Width="250"
                 Height="400"
-                Grid.Column="1"/>
+                Grid.Column="1" Background="#332B00FF"/>
     </Grid>
 </Page>
