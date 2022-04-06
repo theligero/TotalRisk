@@ -5,15 +5,28 @@
     xmlns:local="using:TotalRisk"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Windows.UI.Xaml.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid KeyDown="Grid_KeyDown">
-        <Button x:Name="BackButton" Click="BackButton_Click"
-                Style="{StaticResource NavigationBackButtonNormalStyle}"
-                IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}"
-                ToolTipService.ToolTip="Back"
-                VerticalAlignment="Top"
-                HorizontalAlignment="Left"/>
+
+        <muxc:NavigationView x:Name="nvSample" PaneDisplayMode="Top"
+                             SelectionFollowsFocus="Enabled"
+                             IsSettingsVisible="False"
+                             IsBackButtonVisible="Collapsed"
+                             HorizontalAlignment="Stretch">
+            <muxc:NavigationView.MenuItems>
+                <Button x:Name="BackButton" Click="BackButton_Click"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}"
+                        ToolTipService.ToolTip="Back"/>
+                <muxc:NavigationViewItem Content="Partida" x:Name="Game" HorizontalAlignment="Center"/>
+                <muxc:NavigationViewItem Content="Tienda" x:Name="Store"/>
+                <muxc:NavigationViewItem Content="Pase de Batalla" x:Name="BattlePass"/>
+                <muxc:NavigationViewItem Content="Opciones" x:Name="Options"/>
+            </muxc:NavigationView.MenuItems>
+            <Frame x:Name="contentFrame"/>
+        </muxc:NavigationView>
     </Grid>
 </Page>

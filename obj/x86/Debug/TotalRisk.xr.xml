@@ -14,12 +14,21 @@
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
+      <RootProperty Name="PaneDisplayMode" />
+      <RootProperty Name="SelectionFollowsFocus" />
+      <RootProperty Name="IsSettingsVisible" />
+      <RootProperty Name="IsBackButtonVisible" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="MenuItems" />
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Style" />
       <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Content" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Content" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootEvent Name="Click" />
@@ -28,10 +37,15 @@
       <RootMethod Name="GetToolTip" />
       <RootMethod Name="SetToolTip" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItem">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="TotalRisk.PartidaIndividual" />
     <RootType FullName="TotalRisk.PartidaOnline" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
