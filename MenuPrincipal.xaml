@@ -13,14 +13,14 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="0.75*"/>
-            <ColumnDefinition Width="1.25*"/>
+            <ColumnDefinition Width="0.25*"/>
             <ColumnDefinition Width="0.75*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="*"/>
@@ -53,16 +53,17 @@
                 Content="Tienda"
                 Click="Tienda_Click"
                 VerticalAlignment="Stretch"
-                Grid.Column="2" Grid.Row="3" 
-                HorizontalAlignment="Center" Width="394">
+                Grid.Column="1" Grid.Row="3" Width="750" HorizontalAlignment="Center" Grid.ColumnSpan="3">
             <Button.Background>
                 <AcrylicBrush TintColor="#CCFFF300"/>
             </Button.Background>
         </Button>
 
-        <Popup VerticalOffset="10" HorizontalOffset="200" x:Name="StandardPopup">
+        <Popup VerticalOffset="10" HorizontalOffset="200" x:Name="StandardPopup"
+               Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="3"
+               VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Border BorderBrush="Yellow" Background="DarkOrange"
-                BorderThickness="2" Width="200" Height="200">
+                BorderThickness="2" Width="1000" Height="1000">
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Button Content="x" Click="ClosePopupClicked" HorizontalAlignment="Right" VerticalAlignment="Top"/>
                 </StackPanel>
