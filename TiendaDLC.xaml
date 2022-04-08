@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="TotalRisk.TiendaDLC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TotalRisk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <d:NavigationView x:Name="nvSample" PaneDisplayMode="Top"
+                             SelectionFollowsFocus="Enabled"
+                             IsSettingsVisible="False"
+                             IsBackButtonVisible="Collapsed"
+                             HorizontalAlignment="Stretch"
+                             Grid.Row="0">
+            <d:NavigationView.MenuItems>
+                <Button x:Name="BackButton" Click="BackButton_Click"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}"
+                        ToolTipService.ToolTip="Back"/>
+                <d:NavigationViewItem Content="Partida" x:Name="Game" HorizontalAlignment="Center"/>
+                <muxc:NavigationViewItem Content="Tienda" x:Name="Store"/>
+                <muxc:NavigationViewItem Content="Pase de Batalla" x:Name="BattlePass"/>
+                <muxc:NavigationViewItem Content="Opciones" x:Name="Options"/>
+            </d:NavigationView.MenuItems>
+            <Frame x:Name="contentFrame"/>
+        </d:NavigationView>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <NavigationView x:Name="shopNavigation"
+                            PaneDisplayMode="Top"
+                            IsBackEnabled="False"
+                            IsBackButtonVisible="Collapsed">
+                <NavigationView.MenuItems>
+                    <NavigationViewItem Content="Constetics" x:Name="CosmeticsTab" />
+                    <NavigationViewItem Content="DLC" x:Name="DLCTab"/>
+                </NavigationView.MenuItems>
+            </NavigationView>
+            <Grid Grid.Row="1"
+                  Margin="30, 30, 30, 50">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            <Image Grid.Row="1" 
+                   Source="Assets/Square150x150Logo.scale-200.png"
+                   Stretch="Fill"/>
+            <Image Grid.Row="1"
+                   Grid.Column="1"
+                   Source="Assets/Square150x150Logo.scale-200.png"
+                   Stretch="Fill"/>
+            <Image Grid.Row="1" 
+                   Grid.Column="2"
+                   Source="Assets/Square150x150Logo.scale-200.png"
+                   Stretch="Fill"/>
+            <Image Grid.Row="0" 
+                   Grid.ColumnSpan="3"
+                   Source="Assets/Square150x150Logo.scale-200.png"
+                   Stretch="Fill"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

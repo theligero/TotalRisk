@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ilige\\Desktop\\TotalRisk\\TotalRisk.csproj": {}
+    "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ilige\\Desktop\\TotalRisk\\TotalRisk.csproj": {
+    "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilige\\Desktop\\TotalRisk\\TotalRisk.csproj",
+        "projectUniqueName": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj",
         "projectName": "TotalRisk",
-        "projectPath": "C:\\Users\\ilige\\Desktop\\TotalRisk\\TotalRisk.csproj",
-        "packagesPath": "C:\\Users\\ilige\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilige\\Desktop\\TotalRisk\\obj\\",
+        "projectPath": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj",
+        "packagesPath": "C:\\Users\\jianu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\ilige\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\jianu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

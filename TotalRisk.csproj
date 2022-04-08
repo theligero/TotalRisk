@@ -119,6 +119,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BattlePass.xaml.cs">
+      <DependentUpon>BattlePass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAjustes.xaml.cs">
+      <DependentUpon>MenuAjustes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
     <Compile Include="PartidaIndividual.xaml.cs">
       <DependentUpon>PartidaIndividual.xaml</DependentUpon>
     </Compile>
@@ -129,6 +136,13 @@
       <DependentUpon>MenuPrincipal.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiendaCosmeticos.xaml.cs">
+      <DependentUpon>TiendaCosmeticos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TiendaDLC.xaml.cs">
+      <DependentUpon>TiendaDLC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -150,6 +164,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="BattlePass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MenuAjustes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PartidaIndividual.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -161,6 +183,14 @@
     <Page Include="MenuPrincipal.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TiendaCosmeticos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TiendaDLC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

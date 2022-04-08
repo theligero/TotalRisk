@@ -10,7 +10,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:ConnectionId='2'                       >
-
         <muxc:NavigationView x:ConnectionId='3' x:Name="nvSample" PaneDisplayMode="Top"
                              SelectionFollowsFocus="Enabled"
                              IsSettingsVisible="False"
@@ -28,6 +27,81 @@
             </muxc:NavigationView.MenuItems>
             <Frame x:ConnectionId='9' x:Name="contentFrame"/>
         </muxc:NavigationView>
+
+        <Grid Margin="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1.25*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Tu partida reciente"
+                       FontSize="70"
+                       VerticalAlignment="Center"/>
+
+            <Image Grid.Row="1" 
+                   Grid.RowSpan="2"
+                   Source="Assets/Square150x150Logo.scale-200.png"/>
+            <StackPanel Grid.Row="1"
+                        Grid.Column="1"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        >
+                <TextBlock Text="TotalRisk VS"
+                       FontSize="40"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                <ComboBox HorizontalAlignment="Stretch"
+                          Margin="30, 20, 30, 0">
+                    
+                </ComboBox>
+                <Grid>
+                    
+                </Grid>
+                <Button Width="350"
+                        Height="200"
+                        Padding="0"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center" 
+                        Content="PLAY"
+                        Margin="20"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="2"
+                        Grid.Column="1"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch">
+                <TextBlock Text="TotalRisk Coop"
+                       FontSize="40"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                <Button Width="350"
+                        Height="50"
+                        Padding="0"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center" 
+                        Content="NUEVA PARTIDA"
+                        Margin="20, 20, 20, 0"/>
+                <ComboBox HorizontalAlignment="Stretch"
+                          Margin="30, 20, 30, 0">
+
+                </ComboBox>
+                <Grid>
+
+                </Grid>
+                <Button Width="350"
+                        Height="180"
+                        Padding="0"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center" 
+                        Content="PLAY"
+                        Margin="20"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>
 
