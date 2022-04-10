@@ -25,6 +25,7 @@ namespace TotalRisk
         public MainPage()
         {
             this.InitializeComponent();
+            StandardPopup.IsOpen = false;
         }
 
         private void Individual_Click(object sender, RoutedEventArgs e)
@@ -35,6 +36,21 @@ namespace TotalRisk
         private void Cooperativo_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PartidaOnline));
+        }
+
+        private void Tienda_Click(object sender, RoutedEventArgs e)
+        {
+            if (!StandardPopup.IsOpen) StandardPopup.IsOpen = true;
+        }
+
+        private void ClosePopupClicked(object sender, RoutedEventArgs e)
+        {
+            if (StandardPopup.IsOpen) StandardPopup.IsOpen = false;
+        }
+
+        private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if (StandardPopup.IsOpen) StandardPopup.IsOpen = false;
         }
     }
 }

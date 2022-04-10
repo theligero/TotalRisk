@@ -8,28 +8,66 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid KeyDown="Grid_KeyDown">
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.75*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
         <Button x:Name="Individual"
-                Content="Modo Individual"
-                Click="Individual_Click"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Left"
-                Width="250"
-                Height="400"
-                Grid.Column="1" Background="#3308FF00"/>
+                    Content="Modo Individual"
+                    Click="Individual_Click"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
+                    Height="400"
+                    Grid.Column="1" Grid.Row="1">
+            <Button.Background>
+                <AcrylicBrush TintColor="#CC04FF10"/>
+            </Button.Background>
+        </Button>
 
         <Button x:Name="Cooperativo"
-                Content="Modo Cooperativo"
-                Click="Cooperativo_Click"
-                HorizontalAlignment="Right"
-                Width="250"
-                Height="400"
-                Grid.Column="1" Background="#332B00FF"/>
+                    Content="Modo Cooperativo"
+                    Click="Cooperativo_Click"
+                    HorizontalAlignment="Stretch"
+                    Height="400"
+                    Grid.Column="3" Grid.Row="1">
+            <Button.Background>
+                <AcrylicBrush TintColor="#CC00A2FF"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Tienda"
+                Content="Tienda"
+                Click="Tienda_Click"
+                VerticalAlignment="Stretch"
+                Grid.Column="1" Grid.Row="3" Width="750" HorizontalAlignment="Center" Grid.ColumnSpan="3">
+            <Button.Background>
+                <AcrylicBrush TintColor="#CCFFF300"/>
+            </Button.Background>
+        </Button>
+
+        <Popup VerticalOffset="10" HorizontalOffset="200" x:Name="StandardPopup"
+               Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="3"
+               VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Border BorderBrush="Yellow" Background="DarkOrange"
+                BorderThickness="2" Width="1000" Height="1000">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Content="x" Click="ClosePopupClicked" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                </StackPanel>
+            </Border>
+        </Popup>
     </Grid>
 </Page>
