@@ -26,6 +26,7 @@
                 <muxc:NavigationViewItem Content="Pase de Batalla" x:Name="BattlePass"/>
                 <muxc:NavigationViewItem Content="Opciones" x:Name="Options"/>
             </muxc:NavigationView.MenuItems>
+
             <Frame x:Name="contentFrame"/>
         </muxc:NavigationView>
     </Grid>

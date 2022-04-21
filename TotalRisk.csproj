@@ -122,6 +122,9 @@
     <Compile Include="BattlePass.xaml.cs">
       <DependentUpon>BattlePass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CrearPartida.xaml.cs">
+      <DependentUpon>CrearPartida.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MenuAjustes.xaml.cs">
       <DependentUpon>MenuAjustes.xaml</DependentUpon>
     </Compile>
@@ -168,6 +171,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="BattlePass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CrearPartida.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

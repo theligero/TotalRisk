@@ -53,20 +53,19 @@
                 Content="Tienda"
                 Click="Tienda_Click"
                 VerticalAlignment="Stretch"
-                Grid.Column="1" Grid.Row="3" Width="750" HorizontalAlignment="Center" Grid.ColumnSpan="3">
+                Grid.Column="1" Grid.Row="3" Width="940" HorizontalAlignment="Center" Grid.ColumnSpan="3">
             <Button.Background>
                 <AcrylicBrush TintColor="#CCFFF300"/>
             </Button.Background>
         </Button>
 
-        <Popup VerticalOffset="10" HorizontalOffset="200" x:Name="StandardPopup"
-               Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="3"
-               VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Popup x:Name="StandardPopup" Grid.Row="1" Grid.Column="2"
+               VerticalAlignment="Center" HorizontalAlignment="Center">
             <Border BorderBrush="Yellow" Background="DarkOrange"
-                BorderThickness="2" Width="1000" Height="1000">
-                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Button Content="x" Click="ClosePopupClicked" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-                </StackPanel>
+                BorderThickness="2" Width="500" Height="500">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                    
+                </Grid>
             </Border>
         </Popup>
     </Grid>

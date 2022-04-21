@@ -43,11 +43,6 @@ namespace TotalRisk
             if (!StandardPopup.IsOpen) StandardPopup.IsOpen = true;
         }
 
-        private void ClosePopupClicked(object sender, RoutedEventArgs e)
-        {
-            if (StandardPopup.IsOpen) StandardPopup.IsOpen = false;
-        }
-
         private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
         {
             if (StandardPopup.IsOpen) StandardPopup.IsOpen = false;
