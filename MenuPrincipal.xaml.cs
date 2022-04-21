@@ -30,12 +30,12 @@ namespace TotalRisk
 
         private void Individual_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PartidaIndividual));
+            this.Frame.Navigate(typeof(TabPage), "single");
         }
 
         private void Cooperativo_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(TabPage));
+            this.Frame.Navigate(typeof(TabPage), "coop");
         }
 
         private void Tienda_Click(object sender, RoutedEventArgs e)

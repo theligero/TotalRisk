@@ -29,19 +29,25 @@ namespace TotalRisk
             this.InitializeComponent();
         }
 
+        string prev = "";
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
         {
             ("game", typeof(PartidaOnline)),
             ("store", typeof(TiendaCosmeticos)),
             ("battlepasstab", typeof(BattlePass)),
             ("options", typeof(MenuAjustes)),
-            ("mainmenu", typeof(MainPage))
+            ("mainmenu", typeof(MainPage)),
+            ("single", typeof(PartidaIndividual)),
+            ("coop", typeof(PartidaOnline)),
         };
-
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            prev = e.Parameter.ToString();
+        }
         private void MainNavigation_Loaded(object sender, RoutedEventArgs e)
         {
             MainNavigation.SelectedItem = MainNavigation.MenuItems[0];
-            MainNavigation_Navigate("game", new Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
+            MainNavigation_Navigate(prev, new Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
             // Listen to the window directly so the app responds
             // to accelerator keys regardless of which element has focus.
             Window.Current.CoreWindow.Dispatcher.AcceleratorKeyActivated +=

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-21T14:31:49.898</Modified>
+      <Modified>2022-04-21T14:48:20.332</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\TotalRisk.exe">
       <PackagePath>entrypoint\TotalRisk.exe</PackagePath>
-      <Modified>2022-04-21T14:31:49.279</Modified>
+      <Modified>2022-04-21T14:48:19.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.13\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -90,39 +90,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.163</Modified>
+      <Modified>2022-04-21T14:47:29.733</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\BattlePass.xbf">
       <PackagePath>BattlePass.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.163</Modified>
+      <Modified>2022-04-21T14:47:29.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\MenuAjustes.xbf">
       <PackagePath>MenuAjustes.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.164</Modified>
+      <Modified>2022-04-21T14:47:29.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\PartidaIndividual.xbf">
       <PackagePath>PartidaIndividual.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.164</Modified>
+      <Modified>2022-04-21T14:47:29.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\PartidaOnline.xbf">
       <PackagePath>PartidaOnline.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.164</Modified>
+      <Modified>2022-04-21T14:47:29.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\MenuPrincipal.xbf">
       <PackagePath>MenuPrincipal.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.164</Modified>
+      <Modified>2022-04-21T14:47:29.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\TabPage.xbf">
       <PackagePath>TabPage.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.164</Modified>
+      <Modified>2022-04-21T14:47:29.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\TiendaCosmeticos.xbf">
       <PackagePath>TiendaCosmeticos.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.165</Modified>
+      <Modified>2022-04-21T14:47:29.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\TiendaDLC.xbf">
       <PackagePath>TiendaDLC.xbf</PackagePath>
-      <Modified>2022-04-21T14:31:49.165</Modified>
+      <Modified>2022-04-21T14:47:29.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -134,7 +134,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\Core\TotalRisk.exe">
       <PackagePath>TotalRisk.exe</PackagePath>
-      <Modified>2022-04-21T14:31:49.891</Modified>
+      <Modified>2022-04-21T14:48:20.326</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
