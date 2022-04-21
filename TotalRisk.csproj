@@ -136,6 +136,9 @@
       <DependentUpon>MenuPrincipal.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabPage.xaml.cs">
+      <DependentUpon>TabPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TiendaCosmeticos.xaml.cs">
       <DependentUpon>TiendaCosmeticos.xaml</DependentUpon>
     </Compile>
@@ -183,6 +186,10 @@
     <Page Include="MenuPrincipal.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TabPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TiendaCosmeticos.xaml">
       <SubType>Designer</SubType>

@@ -13,24 +13,6 @@
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <d:NavigationView x:Name="nvSample" PaneDisplayMode="Top"
-                             SelectionFollowsFocus="Enabled"
-                             IsSettingsVisible="False"
-                             IsBackButtonVisible="Collapsed"
-                             HorizontalAlignment="Stretch"
-                             Grid.Row="0">
-            <d:NavigationView.MenuItems>
-                <Button x:Name="BackButton" Click="BackButton_Click"
-                        Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}"
-                        ToolTipService.ToolTip="Back"/>
-                <d:NavigationViewItem Content="Partida" x:Name="Game" HorizontalAlignment="Center"/>
-                <muxc:NavigationViewItem Content="Tienda" x:Name="Store"/>
-                <muxc:NavigationViewItem Content="Pase de Batalla" x:Name="BattlePass"/>
-                <muxc:NavigationViewItem Content="Opciones" x:Name="Options"/>
-            </d:NavigationView.MenuItems>
-            <Frame x:Name="contentFrame"/>
-        </d:NavigationView>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1.5*"/>

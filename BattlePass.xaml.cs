@@ -5,12 +5,15 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
@@ -25,6 +28,36 @@ namespace TotalRisk
         public BattlePass()
         {
             this.InitializeComponent();
+        }
+
+        private void missionNavigation_Loaded(object sender, RoutedEventArgs e)
+        {
+            missionNavigation.SelectedItem = missionNavigation.MenuItems[0];
+        }
+
+        private void missionNavigation_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+            if (args.IsSettingsSelected == true)
+            {
+                missionNavigation_Navigate("settings", args.RecommendedNavigationTransitionInfo);
+            }
+            else if (args.SelectedItemContainer != null)
+            {
+                var navItemTag = args.SelectedItemContainer.Tag.ToString();
+                missionNavigation_Navigate(navItemTag, args.RecommendedNavigationTransitionInfo);
+            }
+        }
+
+        private void missionNavigation_Navigate(string v, NavigationTransitionInfo recommendedNavigationTransitionInfo)
+        {
+            if (v == "daily")
+            {
+                missions.Text = "Daily mision 1";
+            }
+            else
+            {
+                missions.Text = "Weekly mision 1";
+            }
         }
     }
 }

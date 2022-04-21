@@ -23,7 +23,7 @@
                 <Button x:Name="BackButton" Click="BackButton_Click"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
                         IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}"
-                        ToolTipService.ToolTip="Back"/>
+                        ToolTipService.ToolTip="Back" Height="41"/>
                 <d:NavigationViewItem Content="Partida" x:Name="Game" HorizontalAlignment="Center"/>
                 <muxc:NavigationViewItem Content="Tienda" x:Name="Store"/>
                 <muxc:NavigationViewItem Content="Pase de Batalla" x:Name="BattlePass"/>

@@ -35,7 +35,7 @@ namespace TotalRisk
 
         private void Cooperativo_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PartidaOnline));
+            this.Frame.Navigate(typeof(TabPage));
         }
 
         private void Tienda_Click(object sender, RoutedEventArgs e)

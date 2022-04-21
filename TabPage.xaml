@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="TotalRisk.TabPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TotalRisk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <NavigationView x:Name="MainNavigation"
+                        PaneDisplayMode="Top"
+                        IsSettingsVisible="False"
+                        Loaded="MainNavigation_Loaded"
+                        ItemInvoked="MainNavigation_ItemInvoked"
+                        IsBackEnabled="True"
+                        BackRequested="MainNavigation_BackRequested">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Partida" x:Name="GameTab" Tag="game"/>
+                <NavigationViewItem Content="Tienda" x:Name="Store" Tag="store"/>
+                <NavigationViewItem Content="Pase de batalla" x:Name="BattlePassTab" Tag="battlepasstab"/>
+                <NavigationViewItem Content="Opciones" x:Name="Options" Tag="options"/>
+            </NavigationView.MenuItems>
+            <ScrollViewer Height="auto">
+                <Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True"
+                   NavigationFailed="ContentFrame_NavigationFailed"/>
+            </ScrollViewer>
+        </NavigationView>
+    </Grid>
+</Page>

@@ -10,24 +10,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid KeyDown="Grid_KeyDown">
-        <muxc:NavigationView x:Name="nvSample" PaneDisplayMode="Top"
-                             SelectionFollowsFocus="Enabled"
-                             IsSettingsVisible="False"
-                             IsBackButtonVisible="Collapsed"
-                             HorizontalAlignment="Stretch">
-            <muxc:NavigationView.MenuItems>
-                <Button x:Name="BackButton" Click="BackButton_Click"
-                        Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}"
-                        ToolTipService.ToolTip="Back"/>
-                <muxc:NavigationViewItem Content="Partida" x:Name="Game" HorizontalAlignment="Center"/>
-                <muxc:NavigationViewItem Content="Tienda" x:Name="Store"/>
-                <muxc:NavigationViewItem Content="Pase de Batalla" x:Name="BattlePass"/>
-                <muxc:NavigationViewItem Content="Opciones" x:Name="Options"/>
-            </muxc:NavigationView.MenuItems>
-            <Frame x:Name="contentFrame"/>
-        </muxc:NavigationView>
-
         <Grid Margin="50">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>

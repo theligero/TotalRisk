@@ -9,29 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <d:NavigationView x:Name="nvSample" PaneDisplayMode="Top"
-                             SelectionFollowsFocus="Enabled"
-                             IsSettingsVisible="False"
-                             IsBackButtonVisible="Collapsed"
-                             HorizontalAlignment="Stretch"
-                             Grid.Row="0">
-            <d:NavigationView.MenuItems>
-                <Button x:Name="BackButton" Click="BackButton_Click"
-                        Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}"
-                        ToolTipService.ToolTip="Back"/>
-                <d:NavigationViewItem Content="Partida" x:Name="Game" HorizontalAlignment="Center"/>
-                <muxc:NavigationViewItem Content="Tienda" x:Name="Store"/>
-                <muxc:NavigationViewItem Content="Pase de Batalla" x:Name="BattlePass"/>
-                <muxc:NavigationViewItem Content="Opciones" x:Name="Options"/>
-            </d:NavigationView.MenuItems>
-            <Frame x:Name="contentFrame"/>
-        </d:NavigationView>
-
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -51,16 +28,25 @@
                        FontSize="40"
                        HorizontalAlignment="Center"/>
             <NavigationView Grid.Row="1"
-                            x:Name="shopNavigation"
+                            x:Name="missionNavigation"
+                            Loaded="missionNavigation_Loaded"
                             PaneDisplayMode="Top"
                             IsBackEnabled="False"
                             IsBackButtonVisible="Collapsed"
                             IsSettingsVisible="False"
-                            Margin="30, 0, 30, 0">
+                            Margin="30, 0, 30, 0"
+                            SelectionChanged="missionNavigation_SelectionChanged">
                 <NavigationView.MenuItems>
-                    <NavigationViewItem Content="Daily" x:Name="DailyTab" />
-                    <NavigationViewItem Content="Weekly" x:Name="WeeklyTab"/>
+                    <NavigationViewItem Content="Daily" x:Name="DailyTab" Tag="daily"/>
+                    <NavigationViewItem Content="Weekly" x:Name="WeeklyTab" Tag="weekly"/>
                 </NavigationView.MenuItems>
+                <NavigationView.Content>
+                    <StackPanel>
+                        <TextBlock Text="Daily mision 1"
+                                   Margin="12"
+                                   x:Name="missions"/>
+                    </StackPanel>
+                </NavigationView.Content>
             </NavigationView>
             <Image Grid.Column="1"
                    Grid.Row="1"

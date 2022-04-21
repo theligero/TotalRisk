@@ -53,7 +53,6 @@ C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\qualifiers.txt.intermedi
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112570540000000.json
-C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TiendaCosmeticos.g.i.cs
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TiendaCosmeticos.g.cs
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TiendaCosmeticos.xaml
@@ -74,3 +73,8 @@ C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TiendaDLC.xaml
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\BattlePass.xbf
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\MenuAjustes.xbf
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TiendaDLC.xbf
+C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\TabPage.xbf
+C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TabPage.g.i.cs
+C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TabPage.g.cs
+C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TabPage.xaml
+C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\TabPage.xbf
