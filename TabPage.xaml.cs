@@ -94,6 +94,11 @@ namespace TotalRisk
             App.TryGoBack();
         }
 
+        private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Escape)
+                App.TryGoBack();
+        }
         private void CoreDispatcher_AcceleratorKeyActivated(CoreDispatcher sender, AcceleratorKeyEventArgs e)
         {
             // When Alt+Left are pressed navigate back
