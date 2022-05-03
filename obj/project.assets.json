@@ -4098,11 +4098,12 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -8158,34 +8159,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\usuario_local\\.nuget\\packages\\": {},
-    "c:\\software\\programacion\\MSVStudio2017\\Shared\\NuGetPackages": {},
-    "c:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
+    "C:\\Users\\jianu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "U:\\hlocal\\TotalRisk\\TotalRisk.csproj",
+      "projectUniqueName": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj",
       "projectName": "TotalRisk",
-      "projectPath": "U:\\hlocal\\TotalRisk\\TotalRisk.csproj",
-      "packagesPath": "C:\\Users\\usuario_local\\.nuget\\packages\\",
-      "outputPath": "U:\\hlocal\\TotalRisk\\obj\\",
+      "projectPath": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj",
+      "packagesPath": "C:\\Users\\jianu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "c:\\software\\programacion\\MSVStudio2017\\Shared\\NuGetPackages",
-        "c:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\usuario_local\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\jianu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.17763"
       ],
       "sources": {
-        "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -27,11 +27,13 @@
 
             <Image Grid.Row="1" 
                    Grid.RowSpan="2"
+                   Height="auto"
                    Source="Assets/Square150x150Logo.scale-200.png"/>
             <StackPanel Grid.Row="1"
                         Grid.Column="1"
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Stretch"
+                        Height="auto"
                         >
                 <TextBlock Text="TotalRisk VS"
                        FontSize="40"
@@ -44,13 +46,23 @@
                 <Grid>
                     
                 </Grid>
-                <Button Width="350"
+                <Button x:Name="VSButton"
+                        Width="350"
                         Height="200"
                         Padding="0"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Center" 
-                        Content="PLAY"
-                        Margin="20"/>
+                        Content="JUGAR"
+                        Margin="20"
+                        Click="VSButton_Click"/>
+                <Button x:Name="CancelButton"
+                        Width="350"
+                        Height="Auto"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center" 
+                        Content="CANCELAR BÚSQUEDA"
+                        Click="Cancel_Click"
+                        Visibility="Collapsed"/>
             </StackPanel>
             
             <StackPanel Grid.Row="2"
@@ -79,7 +91,7 @@
                         Padding="0"
                         VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" 
-                        Content="PLAY"
+                        Content="JUGAR"
                         Margin="20"/>
             </StackPanel>
         </Grid>

@@ -38,5 +38,17 @@ namespace TotalRisk
             if (e.Key == Windows.System.VirtualKey.Escape) 
                 App.TryGoBack();
         }
+
+        private void VSButton_Click(object sender, RoutedEventArgs e)
+        {
+            VSButton.Content = "Buscando...";
+            CancelButton.Visibility = Visibility.Visible;
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            VSButton.Content = "JUGAR";
+            CancelButton.Visibility = Visibility.Collapsed;
+        }
     }
 }

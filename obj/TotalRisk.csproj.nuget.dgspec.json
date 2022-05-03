@@ -1,33 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "U:\\hlocal\\TotalRisk\\TotalRisk.csproj": {}
+    "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj": {}
   },
   "projects": {
-    "U:\\hlocal\\TotalRisk\\TotalRisk.csproj": {
+    "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\hlocal\\TotalRisk\\TotalRisk.csproj",
+        "projectUniqueName": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj",
         "projectName": "TotalRisk",
-        "projectPath": "U:\\hlocal\\TotalRisk\\TotalRisk.csproj",
-        "packagesPath": "C:\\Users\\usuario_local\\.nuget\\packages\\",
-        "outputPath": "U:\\hlocal\\TotalRisk\\obj\\",
+        "projectPath": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\TotalRisk.csproj",
+        "packagesPath": "C:\\Users\\jianu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jianu\\Documents\\GitHub\\TotalRisk\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "c:\\software\\programacion\\MSVStudio2017\\Shared\\NuGetPackages",
-          "c:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\usuario_local\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\jianu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "uap10.0.17763"
         ],
         "sources": {
-          "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
