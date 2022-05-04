@@ -122,13 +122,13 @@
     <Compile Include="BattlePass.xaml.cs">
       <DependentUpon>BattlePass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CosmeticItems.cs" />
     <Compile Include="CrearPartida.xaml.cs">
       <DependentUpon>CrearPartida.xaml</DependentUpon>
     </Compile>
     <Compile Include="MenuAjustes.xaml.cs">
       <DependentUpon>MenuAjustes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model.cs" />
     <Compile Include="PartidaIndividual.xaml.cs">
       <DependentUpon>PartidaIndividual.xaml</DependentUpon>
     </Compile>
@@ -148,7 +148,6 @@
     <Compile Include="TiendaDLC.xaml.cs">
       <DependentUpon>TiendaDLC.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

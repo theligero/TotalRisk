@@ -26,8 +26,8 @@
                 <NavigationViewItem Content="Pase de batalla" x:Name="BattlePassTab" Tag="battlepasstab"/>
                 <NavigationViewItem Content="Opciones" x:Name="Options" Tag="options"/>
             </NavigationView.MenuItems>
-            <ScrollViewer Height="auto">
-                <Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True"
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame" IsTabStop="True"
                    NavigationFailed="ContentFrame_NavigationFailed"/>
             </ScrollViewer>
         </NavigationView>

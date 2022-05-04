@@ -25,11 +25,12 @@ namespace TotalRisk
 
     public sealed partial class TiendaCosmeticos : Page
     {
-        public ObservableCollection<VMDron> ListaDrones { get; } = new ObservableCollection<VMDron>();
-
         public TiendaCosmeticos()
         {
             this.InitializeComponent();
+            this.ViewModel = new CosmeticItemsViewModel();
         }
+
+        public CosmeticItemsViewModel ViewModel { get; }
     }
 }
