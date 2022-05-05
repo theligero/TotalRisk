@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -23,9 +24,15 @@ namespace TotalRisk
     /// </summary>
     public sealed partial class PartidaOnline : Page
     {
+        ObservableCollection<String> civs = new ObservableCollection<string>();
         public PartidaOnline()
         {
             this.InitializeComponent();
+            civs.Add("Nubia");
+            civs.Add("Egipto");
+            civs.Add("Alemania");
+            civs.Add("España");
+            civs.Add("EEUU");
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -49,6 +56,12 @@ namespace TotalRisk
         {
             VSButton.Content = "JUGAR";
             CancelButton.Visibility = Visibility.Collapsed;
+        }
+
+        private void CoopButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (CoopButton.Content.ToString() != "Cancelar búsqueda") CoopButton.Content = "Cancelar búsqueda";
+            else CoopButton.Content = "JUGAR";
         }
     }
 }

@@ -9,44 +9,49 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid KeyDown="Grid_KeyDown">
-        <Grid Margin="50">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="4*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="1.25*"/>
-            </Grid.ColumnDefinitions>
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  VerticalScrollMode="Auto" Margin="43,0,0,0"
+                  Height="800">
+        <Grid KeyDown="Grid_KeyDown" Height="975">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1.25*"/>
+        </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Tu partida reciente"
+        <TextBlock Text="Tu partida reciente"
                        FontSize="70"
                        VerticalAlignment="Center"/>
 
-            <Image Grid.Row="1" 
+        <Image Grid.Row="1" 
                    Grid.RowSpan="2"
                    Height="auto"
-                   Source="Assets/Square150x150Logo.scale-200.png"/>
-            <StackPanel Grid.Row="1"
+                   Source="Assets/Square150x150Logo.scale-200.png"
+                   Stretch="Fill"/>
+        <StackPanel Grid.Row="1"
                         Grid.Column="1"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
                         Height="auto"
                         >
-                <TextBlock Text="TotalRisk VS"
+            <TextBlock Text="TotalRisk VS"
                        FontSize="40"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"/>
                 <ComboBox HorizontalAlignment="Stretch"
-                          Margin="30, 20, 30, 0">
-                    
+                          x:Name="VScombo"
+                          Header="Civs"
+                          Margin="30, 20, 30, 0"
+                          ItemsSource="{x:Bind civs}">
                 </ComboBox>
-                <Grid>
-                    
-                </Grid>
-                <Button x:Name="VSButton"
+            <Grid>
+
+            </Grid>
+            <Button x:Name="VSButton"
                         Width="350"
                         Height="200"
                         Padding="0"
@@ -55,7 +60,7 @@
                         Content="JUGAR"
                         Margin="20"
                         Click="VSButton_Click"/>
-                <Button x:Name="CancelButton"
+            <Button x:Name="CancelButton"
                         Width="350"
                         Height="Auto"
                         VerticalAlignment="Top"
@@ -63,37 +68,42 @@
                         Content="CANCELAR BÚSQUEDA"
                         Click="Cancel_Click"
                         Visibility="Collapsed"/>
-            </StackPanel>
-            
-            <StackPanel Grid.Row="2"
+        </StackPanel>
+
+        <StackPanel Grid.Row="2"
                         Grid.Column="1"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch">
-                <TextBlock Text="TotalRisk Coop"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+            <TextBlock Text="TotalRisk Coop"
                        FontSize="40"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"/>
-                <Button Width="350"
+            <Button Width="350"
                         Height="50"
                         Padding="0"
                         VerticalAlignment="Bottom"
                         HorizontalAlignment="Center" 
                         Content="NUEVA PARTIDA"
                         Margin="20, 20, 20, 0"/>
-                <ComboBox HorizontalAlignment="Stretch"
-                          Margin="30, 20, 30, 0">
-                </ComboBox>
-                <Grid>
+            <ComboBox HorizontalAlignment="Stretch"
+                      x:Name="CoopCombo"
+                      Header="Civs"
+                      Margin="30, 20, 30, 0"
+                      ItemsSource="{x:Bind civs}">
+            </ComboBox>
+            <Grid>
 
-                </Grid>
-                <Button Width="350"
-                        Height="180"
-                        Padding="0"
-                        VerticalAlignment="Bottom"
-                        HorizontalAlignment="Center" 
-                        Content="JUGAR"
-                        Margin="20"/>
-            </StackPanel>
-        </Grid>
+            </Grid>
+            <Button Width="350"
+                    x:Name="CoopButton"
+                    Height="180"
+                    Padding="0"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Center" 
+                    Content="JUGAR"
+                    Margin="20"
+                    Click="CoopButton_Click"/>
+        </StackPanel>
     </Grid>
+    </ScrollViewer>
 </Page>

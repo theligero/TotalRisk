@@ -25,7 +25,10 @@
                 <NavigationViewItem Content="Cosmetics" x:Name="CosmeticsTab" Tag="cosmetics" />
                 <NavigationViewItem Content="DLC" x:Name="DLCTab" Tag="DLCs"/>
             </NavigationView.MenuItems>
-            <ScrollViewer>
+            <ScrollViewer VerticalScrollBarVisibility="Disabled"
+                          HorizontalScrollBarVisibility="Disabled"
+                          VerticalScrollMode="Disabled"
+                          HorizontalScrollMode="Disabled">
                 <Frame x:Name="ContentFrame" IsTabStop="True"
                    NavigationFailed="ContentFrame_NavigationFailed"/>
             </ScrollViewer>

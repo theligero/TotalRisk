@@ -8,7 +8,11 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Margin="30, 50, 30, 50">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  VerticalScrollMode="Auto"
+                  Height="700"
+                  Width="auto" VerticalAlignment="Top">
+    <Grid Height="1000">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
@@ -18,20 +22,65 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Image Grid.ColumnSpan="3" 
+            <Button Grid.ColumnSpan="3" 
+                    x:Name="latestDLC"
+                    VerticalAlignment="Center"
+                    Click="latestDLC_Click">
+                <Image Grid.ColumnSpan="3" 
                        VerticalAlignment="Center"
                        Source="/Assets/Asia-administrative_map.png" 
                        Stretch="Fill" Height="613"/>
-        <Image Grid.Row="1" 
-                   Source="Assets/Asia-administrative_map.png"
-                   Stretch="Fill"/>
-        <Image Grid.Row="1"
-                   Grid.Column="1"
-                   Source="Assets/Square150x150Logo.scale-200.png"
-                   Stretch="Fill"/>
-        <Image Grid.Row="1" 
-                   Grid.Column="2"
-                   Source="Assets/Square150x150Logo.scale-200.png"
-                   Stretch="Fill"/>
-    </Grid>
+            </Button>
+            <Button Grid.Row="1"
+                    Name="leftDLC"
+                    Click="latestDLC_Click">
+                <Image Grid.Row="1" 
+                       Source="Assets/Asia-administrative_map.png"
+                       Stretch="Fill" VerticalAlignment="Top"/>
+            </Button>
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Name="midDLC"
+                    Click="latestDLC_Click">
+                <Image Grid.Row="1"
+                       Grid.Column="1"
+                       Source="Assets/Square150x150Logo.scale-200.png"
+                       Stretch="Fill" VerticalAlignment="Top"/>
+            </Button>
+            <Button Grid.Row="1" 
+                    Grid.Column="2" VerticalAlignment="Top"
+                    Name="rightDLC"
+                    Click="latestDLC_Click">
+                <Image Grid.Row="1" 
+                       Grid.Column="2"
+                       Source="Assets/Square150x150Logo.scale-200.png"
+                       Stretch="Fill"/>
+            </Button>
+            <ContentDialog x:Name="buyDialog"
+                           PrimaryButtonText="Acceptar" IsPrimaryButtonEnabled="False"
+                           CloseButtonText="Cancelar"
+                           Opened="buyDialog_Opened"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="3"
+                           Visibility="Visible">
+                <ContentDialog.TitleTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="ms-appx:///Assets/SmallLogo.png" Width="40" Height="40" Margin="10,0"/>
+                            <TextBlock x:Name="dialogText" Text="Confirmar compra"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ContentDialog.TitleTemplate>
+                <StackPanel>
+                    <TextBlock TextWrapping="WrapWholeWords"
+                               Text="¿Está seguro de confirmar esta compra?">
+                        
+                    </TextBlock>
+                    <CheckBox x:Name="ConfirmBuyCheckBox" Content="Confirmar esta compra"
+              Checked="ConfirmBuyCheckBox_Checked" Unchecked="ConfirmBuyCheckBox_Unchecked"/>
+                </StackPanel>
+            </ContentDialog>
+
+        </Grid>
+    </ScrollViewer>
 </Page>
