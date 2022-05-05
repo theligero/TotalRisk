@@ -33,7 +33,7 @@ namespace TotalRisk
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
         {
             ("game", typeof(PartidaOnline)),
-            ("store", typeof(TiendaCosmeticos)),
+            ("store", typeof(Tienda)),
             ("battlepasstab", typeof(BattlePass)),
             ("options", typeof(MenuAjustes)),
             ("mainmenu", typeof(MainPage)),
@@ -77,7 +77,7 @@ namespace TotalRisk
             // Only navigate if the selected page isn't currently loaded.
             if (!(_page is null) && !Type.Equals(preNavPageType, _page))
             {
-                ContentFrame.Navigate(_page, null, transitionInfo);
+                ContentFrame.Navigate(_page, "cosmetics", transitionInfo);
             }
         }
 

@@ -23,7 +23,7 @@
                 <NavigationViewItem Content="Opciones" x:Name="Options"/>
             </NavigationView.MenuItems>
         </NavigationView>-->
-        
+
         <!--<d:NavigationView x:Name="nvSample" PaneDisplayMode="Top"
                              SelectionFollowsFocus="Enabled"
                              IsSettingsVisible="False"
@@ -49,34 +49,54 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
-            <NavigationView x:Name="shopNavigation"
-                            PaneDisplayMode="Top"
-                            IsBackEnabled="False"
-                            IsBackButtonVisible="Collapsed"
-                            IsSettingsVisible="False" muxc:Grid.ColumnSpan="4">
-                <NavigationView.MenuItems>
-                    <NavigationViewItem Content="Constetics" x:Name="CosmeticsTab" />
-                    <NavigationViewItem Content="DLC" x:Name="DLCTab"/>
-                </NavigationView.MenuItems>
-            </NavigationView>
-            <TextBlock Grid.Row="2"
+            <Popup x:Name="Nav_Pop" 
+                   IsOpen="False" 
+                   IsLightDismissEnabled="True"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   LightDismissOverlayMode="On"
+                   Grid.RowSpan="4"
+                   VerticalOffset="-300" HorizontalOffset="-400"
+                   Closed="Nav_Pop_Closed">
+                <Border BorderBrush="{StaticResource ApplicationForegroundThemeBrush}" 
+                        Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+                        BorderThickness="2"
+                        Width="800" Height="600">
+                    <ScrollViewer ScrollViewer.VerticalScrollMode="Enabled"
+                                  ScrollViewer.VerticalScrollBarVisibility="Visible">
+                        <StackPanel x:Name="BasketStackPanel">
+                            <TextBlock Text="Tu cesta: " FontSize="24.667" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Tu cesta está vacía" FontSize="50" HorizontalAlignment="Center"
+                                   VerticalAlignment="Center" x:Name="cestavacia"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Border>
+            </Popup>
+            <TextBlock Grid.Row="1"
                        Text="Buques de guerra"
                        FontSize="50" muxc:Grid.ColumnSpan="4"/>
-            <TextBlock Grid.Row="3"
+            <TextBlock Grid.Row="2"
                        Text="Banderas"
                        FontSize="50" muxc:Grid.ColumnSpan="4"/>
-            <TextBlock Grid.Row="1"
+            <TextBlock Grid.Row="3"
                        Text="Otros"
                        FontSize="50"/>
-
+            <Button x:Name="basketButton"
+                    Grid.Row="4"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Content="Carro"
+                    Click="basketButton_Click" Height="49" Width="153"/>
             <GridView ItemsSource="{x:Bind ViewModel.Items}"
                       Grid.Row="1"
                       VerticalAlignment="Center"
                       ScrollViewer.HorizontalScrollBarVisibility="Auto"
                       ScrollViewer.HorizontalScrollMode="Auto"
                       ScrollViewer.VerticalScrollBarVisibility="Disabled"
-                      ScrollViewer.VerticalScrollMode="Disabled">
+                      ScrollViewer.VerticalScrollMode="Disabled"
+                      IsItemClickEnabled="True"
+                      ItemClick="GridView_ItemClick">
                 <GridView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <ItemsStackPanel Orientation="Horizontal" />
@@ -85,7 +105,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate x:Name="ImageOverlayDataTemplate" x:DataType="local:CosmeticItems">
                         <Grid Height="180" Width="320" AutomationProperties.Name="{x:Bind ItemName}">
-                            <Image Source="Placeholder.png" Stretch="UniformToFill"/>
+                            <Image Source="{x:Bind Source}" Stretch="UniformToFill"/>
                             <StackPanel Orientation="Horizontal" Height="60" VerticalAlignment="Bottom" Background="{ThemeResource SystemBaseLowColor}" Padding="12">
                                 <TextBlock Text="{x:Bind ItemName}"/>
                                 <TextBlock Text="{x:Bind Price}" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
@@ -100,7 +120,9 @@
                       ScrollViewer.HorizontalScrollBarVisibility="Auto"
                       ScrollViewer.HorizontalScrollMode="Auto"
                       ScrollViewer.VerticalScrollBarVisibility="Disabled"
-                      ScrollViewer.VerticalScrollMode="Disabled">
+                      ScrollViewer.VerticalScrollMode="Disabled"
+                      IsItemClickEnabled="True"
+                      ItemClick="GridView_ItemClick">
                 <GridView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <ItemsStackPanel Orientation="Horizontal" />
@@ -109,7 +131,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate x:Name="ImageOverlayDataTemplate2" x:DataType="local:CosmeticItems">
                         <Grid Height="180" Width="320" AutomationProperties.Name="{x:Bind ItemName}">
-                            <Image Source="Placeholder.png" Stretch="UniformToFill"/>
+                            <Image Source="{x:Bind Source}" Stretch="UniformToFill"/>
                             <StackPanel Orientation="Horizontal" Height="60" VerticalAlignment="Bottom" Background="{ThemeResource SystemBaseLowColor}" Padding="12">
                                 <TextBlock Text="{x:Bind ItemName}"/>
                                 <TextBlock Text="{x:Bind Price}" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
@@ -124,7 +146,9 @@
                       ScrollViewer.HorizontalScrollBarVisibility="Auto"
                       ScrollViewer.HorizontalScrollMode="Auto"
                       ScrollViewer.VerticalScrollBarVisibility="Disabled"
-                      ScrollViewer.VerticalScrollMode="Disabled">
+                      ScrollViewer.VerticalScrollMode="Disabled"
+                      IsItemClickEnabled="True"
+                      ItemClick="GridView_ItemClick">
                 <GridView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <ItemsStackPanel Orientation="Horizontal" />
@@ -133,7 +157,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate x:Name="ImageOverlayDataTemplate3" x:DataType="local:CosmeticItems">
                         <Grid Height="180" Width="320" AutomationProperties.Name="{x:Bind ItemName}">
-                            <Image Source="Placeholder.png" Stretch="UniformToFill"/>
+                            <Image Source="{x:Bind Source}" Stretch="UniformToFill"/>
                             <StackPanel Orientation="Horizontal" Height="60" VerticalAlignment="Bottom" Background="{ThemeResource SystemBaseLowColor}" Padding="12">
                                 <TextBlock Text="{x:Bind ItemName}"/>
                                 <TextBlock Text="{x:Bind Price}" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>

@@ -11,6 +11,8 @@ namespace TotalRisk
     {
         public string ItemName { get; set; }
         public double Price { get; set; }
+
+        public string Source { get; set; }
         public DateTime ReleaseDateTime { get; set; }
         public CosmeticItems()
         {
@@ -40,37 +42,43 @@ namespace TotalRisk
             {
                 ItemName = "Cyclops",
                 Price = 4.99,
+                Source = "Assets/1.jpg",
                 ReleaseDateTime = new DateTime(1871 - 07 - 18)
             });
             this.items.Add(new CosmeticItems()
             {
                 ItemName = "Dévastation",
                 Price = 4.99,
+                Source = "Assets/2.jpg",
                 ReleaseDateTime = new DateTime(1879 - 08 - 19)
             });
             this.items.Add(new CosmeticItems()
             {
                 ItemName = "Hecate",
-                Price = 4.99,
+                Price = 7.99,
+                Source = "Assets/3.jpg",
                 ReleaseDateTime = new DateTime(1871 - 09 - 30)
             });
             
             this.items.Add(new CosmeticItems()
             {
-                ItemName = "Hecate",
+                ItemName = "Hoche",
                 Price = 4.99,
+                Source = "Assets/4.jpg",
                 ReleaseDateTime = new DateTime(1871 - 09 - 30)
             });            
             this.items.Add(new CosmeticItems()
             {
-                ItemName = "Hecate",
-                Price = 4.99,
-                ReleaseDateTime = new DateTime(1871 - 09 - 30)
+                ItemName = "Independencia",
+                Price = 9.99,
+                Source = "Assets/5.jpg",
+                ReleaseDateTime = new DateTime(1865 - 08 - 08)
             });            
             this.items.Add(new CosmeticItems()
             {
-                ItemName = "Hecate",
+                ItemName = "Italia",
                 Price = 4.99,
+                Source = "Assets/6.jpg",
                 ReleaseDateTime = new DateTime(1871 - 09 - 30)
             });
         }

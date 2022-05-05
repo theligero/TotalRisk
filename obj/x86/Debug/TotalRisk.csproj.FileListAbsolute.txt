@@ -83,3 +83,8 @@ C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\qualifiers.txt.intermedi
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112570540000000.json
+C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\Tienda.g.i.cs
+C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\Tienda.g.cs
+C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\Tienda.xaml
+C:\Users\jianu\Documents\GitHub\TotalRisk\obj\x86\Debug\Tienda.xbf
+C:\Users\jianu\Documents\GitHub\TotalRisk\bin\x86\Debug\Tienda.xbf
